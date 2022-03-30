@@ -9,10 +9,10 @@ func greet(name:String) -> String { return"hello," + name + "!"
 print(greet(name: "Luke"))
 
 //2.Please declare a function named multiply with two arguments a and b . This function won’t return any value and will only print out the result of a * b . Be noticed that we want to give argument b a default value of 10.
-func mutiply (_ a : Int, _ b :Int){
+func mutiply (_ a : Int, _ b :Int = 10){
     print(a * b)
 }
-mutiply(12, 2)
+mutiply(12)
 
 //3. What’s the difference between argument label and parameter name in function？
 //argument label是外部名，是呼叫function（）裡的參數值；parameter name 是內部名，是在function {}裡的參數

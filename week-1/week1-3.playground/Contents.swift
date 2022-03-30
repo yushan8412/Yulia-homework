@@ -14,10 +14,13 @@ myFriend=["Ian","Bomi","Kevin"]
 //3.Oops,I forgot to add ‘Michael’ who is one of my best friends, please help me to add Michael to the end of myFriends array.
 myFriend.insert("Micheal", at: 3)
 
-//4.Because I usually hang out with Kevin, please move Kevin to the beginning of the .myFriends array.
+//4.Because I usually hang out with Kevin, please move Kevin to the beginning of the .myFriends array.？
+myFriend.remove(at: 2)
+myFriend
+myFriend.insert("kevin", at: 0)
 
-var Kevin = remove
-myFriend.insert("Kevin", at: 0)
+//var Kevin = remove
+//myFriend.insert("Kevin", at: 0)
 
 
 //5.Use for...in to print all the friends in myFriends array.

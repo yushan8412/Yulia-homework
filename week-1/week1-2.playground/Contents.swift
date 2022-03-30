@@ -41,7 +41,7 @@ print(salsry)
 //7. Declare two constants that values are 10 and 3 each, then please calculate the remainder and save the result in a constant named remainder .
 let c = 10
 let d = 3
-let remaimder = c+d
+let remaimder = c % d
 print(remaimder)
 //8. Please explain the difference between let and var .
 // var 是被宣告質量後還可以改變的；let是宣告後就不能在被重新賦予其他意義的。
