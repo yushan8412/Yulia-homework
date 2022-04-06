@@ -6,7 +6,8 @@ enum Gender {
     case undefined
 }
 class Animal {
-    var gender: String = " "
+    var gender = Gender.self
+   // var gender: String = " "
     func eat(){
         print("i eat everything")
     }
