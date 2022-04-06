@@ -6,25 +6,40 @@ enum Gasoilne: String{
     case oil95 = "95"
     case oil98 = "98"
     case diesel = "diesel"
+    
+    func getPrice () {
+        switch gas {
+        case .oil98:
+            return print(32)
+        case .oil92:
+            return print(30)
+        case .oil95:
+            return print(31)
+        case .diesel:
+            return print(28)
+        }
+    }
 }
+let gas: Gasoilne = .oil92
+gas.getPrice()
     
 //func getPrice (for gas: Gasoilne) {
 //    print(Gasoilne.RawValue())
 //}
 //getPrice(for: .diesel)
-func getPrice (for gas: Gasoilne) {
-    switch gas {
-    case .oil98:
-        return print(32)
-    case .oil92:
-        return print(30)
-    case .oil95:
-        return print(31)
-    case .diesel:
-        return print(28)
-    }
-}
-    getPrice(for: .diesel)
+//func getPrice (for gas: Gasoilne) {
+//    switch gas {
+//    case .oil98:
+//        return print(32)
+//    case .oil92:
+//        return print(30)
+//    case .oil95:
+//        return print(31)
+//    case .diesel:
+//        return print(28)
+//    }
+//}
+//    getPrice(for: .diesel)
             
         
 Gasoilne.oil92.rawValue
