@@ -8,7 +8,7 @@ enum Gasoilne: String{
     case diesel = "diesel"
     
     func getPrice () {
-        switch gas {
+        switch self {
         case .oil98:
             return print(32)
         case .oil92:

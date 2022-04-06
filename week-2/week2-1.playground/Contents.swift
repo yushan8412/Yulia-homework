@@ -6,12 +6,14 @@ enum Gender {
     case undefined
 }
 class Animal {
-    var gender = Gender.self
+    var gender = Gender.female
    // var gender: String = " "
     func eat(){
         print("i eat everything")
     }
 }
+//let animal = Animal.self
+//animal.eat()
 
 
 
