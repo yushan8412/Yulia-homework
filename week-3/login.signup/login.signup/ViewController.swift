@@ -64,6 +64,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func segmentedChange(_ sender: UISegmentedControl) { currentPageType = sender.selectedSegmentIndex == 0 ? .login : .signUp
+        accountTextField.text = " "
+        passwordTextField.text = " "
+        checkTextField.text = " "
         
 //        if sender.selectedSegmentIndex == 0 {
 //
@@ -92,6 +95,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //            })
         
         if segmentControl.selectedSegmentIndex == 0 {
+//            accountTextField.text = " "
+//            passwordTextField.text = " "
             
             if accountTextField.text != "appworks_school@gmail.com" ||
                passwordTextField.text != "1234" {
@@ -102,6 +107,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
           }
         
         if segmentControl.selectedSegmentIndex == 1 {
+//            passwordTextField.text = " "
+//            accountTextField.text = ""
+//            checkTextField.text = " "
+            
             if accountTextField.text? .isEmpty == true {
             let alert = UIAlertController(title: "Error", message: "Account can not be empty", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
