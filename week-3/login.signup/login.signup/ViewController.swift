@@ -64,14 +64,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func segmentedChange(_ sender: UISegmentedControl) { currentPageType = sender.selectedSegmentIndex == 0 ? .login : .signUp
-        accountTextField.text = " "
-        passwordTextField.text = " "
-        checkTextField.text = " "
-        
+//        accountTextField.text = " "
+//        passwordTextField.text = " "
+//        checkTextField.text = " "
+    }
 //        if sender.selectedSegmentIndex == 0 {
 //
 //        }
-        
+//    @IBAction func sagmentedChange(_ sender: UISegmentedControl) { currentPageType = sender.selectedSegmentIndex == 1 ? .signUp : .login
+//        accountTextField.text = " "
+//        passwordTextField.text = " "
+//        checkTextField.text = " "
         
         
 
@@ -79,13 +82,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
 //            currentPageType = .login
 //        } else {
 //            currentPageType = .signUp
-        }
+        
 
     
     
     
     @IBAction func pressButton(_ sender: UIButton) {
-//        if sender.selectedSegmentIndex == 0 {
+        //        if sender.selectedSegmentIndex == 0 {
 //    func accountEmprt()
 //        if let accountIsEmpty = self.accountTextField.text, accountIsEmpty.isEmpty {
 //            let alert = UIAlertController(title: "Error", message: "Account can not be empty", preferredStyle: .alert)
