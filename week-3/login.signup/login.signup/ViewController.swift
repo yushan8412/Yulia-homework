@@ -43,6 +43,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if pageType == .login{
           accountTextField.text = nil
           passwordTextField.text = nil
+          checkTextField.text = nil
             checkTextField.isEnabled = false
             checkTextField.backgroundColor = .gray
         } 
