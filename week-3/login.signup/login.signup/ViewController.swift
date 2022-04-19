@@ -41,11 +41,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func viewForLogin(pageType: PageType) {
         if pageType == .login{
+          accountTextField.text = nil
+          passwordTextField.text = nil
             checkTextField.isEnabled = false
             checkTextField.backgroundColor = .gray
         } 
         
         if pageType == .signUp{
+          accountTextField.text = nil
+          passwordTextField.text = nil
+          checkTextField.text = nil
             checkTextField.isEnabled = true
             checkTextField.backgroundColor = .white
         }
@@ -63,11 +68,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    @IBAction func segmentedChange(_ sender: UISegmentedControl) { currentPageType = sender.selectedSegmentIndex == 0 ? .login : .signUp
-//        accountTextField.text = " "
-//        passwordTextField.text = " "
-//        checkTextField.text = " "
-    }
+  @IBAction func segmentedChange(_ sender: UISegmentedControl) {
+//    accountTextField.text = " "
+//    passwordTextField.text = " "
+//    checkTextField.text = " "
+    currentPageType = sender.selectedSegmentIndex == 0 ? .login : .signUp
+  }
+    
+      
 //        if sender.selectedSegmentIndex == 0 {
 //
 //        }
@@ -109,12 +117,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
           }
         
-        if segmentControl.selectedSegmentIndex == 1 {
+      if segmentControl.selectedSegmentIndex == 1 {
 //            passwordTextField.text = " "
-//            accountTextField.text = ""
+//            accountTextField.text = " "
 //            checkTextField.text = " "
-            
-            if accountTextField.text? .isEmpty == true {
+//
+           if accountTextField.text? .isEmpty == true {
             let alert = UIAlertController(title: "Error", message: "Account can not be empty", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alert, animated: true, completion: {return})
